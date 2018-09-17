@@ -60,7 +60,7 @@ end
 
 def find_cool(array)
   array.select do |x|
-    puts "===+++===\nX#{x.class} : #{x}"
+    #puts "===+++===\nX#{x.class} : #{x}"
     x[:temperature] == "cool"
   end
 end
