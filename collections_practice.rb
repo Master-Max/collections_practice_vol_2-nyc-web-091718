@@ -59,9 +59,9 @@ def merge_data(data1, data2)
 end
 
 def find_cool(array)
-  array.select do |x,y|
-    puts "===+++===\n#{x.class} : #{x}"
-    puts "===+++===\n#{y.class} : #{y}"
+  array.select do |x|
+    puts "===+++===\nX#{x.class} : #{x}"
+    x[:temperature] == "cool"
   end
 end
 
