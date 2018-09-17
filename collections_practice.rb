@@ -58,8 +58,10 @@ def merge_data(data1, data2)
   [data1[0].merge(data2[0][data1[0][:first_name]]),data1[1].merge(data2[0][data1[1][:first_name]])]
 end
 
-def find_cool(x)
-  x.select
+def find_cool(array)
+  array.select do |x,y|
+    puts "===+++===\n#{x.class} : #{x}"
+  end
 end
 
 def organize_schools(schools)
