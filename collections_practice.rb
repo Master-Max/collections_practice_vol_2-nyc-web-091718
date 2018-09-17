@@ -59,7 +59,7 @@ def merge_data(data1, data2)
 end
 
 def find_cool(x)
-  puts "============\n#{x}"
+  x.select
 end
 
 def organize_schools(schools)
