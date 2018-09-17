@@ -61,6 +61,7 @@ end
 def find_cool(array)
   array.select do |x,y|
     puts "===+++===\n#{x.class} : #{x}"
+    puts "===+++===\n#{y.class} : #{y}"
   end
 end
 
