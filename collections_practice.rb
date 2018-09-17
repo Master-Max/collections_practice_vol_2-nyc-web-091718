@@ -69,7 +69,9 @@ def organize_schools(schools)
   puts "#{schools.class}: #{schools}"
   org_hash = {}
   schools.each do |x,y|
-    if !org_hash.has_key?(y[:location])
+    if org_hash.has_key?(y[:location])
+      org_hash[y[:location]] => x
+    else
       org_hash[y[:location]] = x
     end
   end
